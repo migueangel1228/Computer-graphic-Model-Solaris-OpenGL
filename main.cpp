@@ -9,6 +9,8 @@
 #include <iostream>
 #include "glsl.h"
 #include <time.h>
+#include "glm.h"
+#include <FreeImage.h> //*** Para Textura: Incluir librería
 
 //-----------------------------------------------------------------------------
 
@@ -18,25 +20,83 @@ class myWindow : public cwc::glutWindow
 protected:
    cwc::glShaderManager SM;
    cwc::glShader *shader;
+   cwc::glShader* shader1; //Para Textura: variable para abrir los shader de textura
    GLuint ProgramObject;
    clock_t time0,time1;
    float timer010;  // timer counting 0->1->0
    bool bUp;        // flag if counting up or down.
+   GLMmodel* objmodel_ptr;
+   GLMmodel* objmodel_ptr1; //*** Para Textura: variable para objeto texturizado
+   GLuint texid; //*** Para Textura: variable que almacena el identificador de textura
 
 
 public:
 	myWindow(){}
+
+	//*** Para Textura: aqui adiciono un método que abre la textura en JPG
+	void initialize_textures(void)
+	{
+		int w, h;
+		GLubyte* data = 0;
+		//data = glmReadPPM("soccer_ball_diffuse.ppm", &w, &h);
+		//std::cout << "Read soccer_ball_diffuse.ppm, width = " << w << ", height = " << h << std::endl;
+
+		//dib1 = loadImage("soccer_ball_diffuse.jpg"); //FreeImage
+
+		glGenTextures(1, &texid);
+		glBindTexture(GL_TEXTURE_2D, texid);
+		glTexEnvi(GL_TEXTURE_2D, GL_TEXTURE_ENV_MODE, GL_MODULATE);
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
+
+		// Loading JPG file
+		FIBITMAP* bitmap = FreeImage_Load(
+			FreeImage_GetFileType("./Mallas/bola.jpg", 0),
+			"./Mallas/bola.jpg");  //*** Para Textura: esta es la ruta en donde se encuentra la textura
+
+		FIBITMAP* pImage = FreeImage_ConvertTo32Bits(bitmap);
+		int nWidth = FreeImage_GetWidth(pImage);
+		int nHeight = FreeImage_GetHeight(pImage);
+
+		glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA8, nWidth, nHeight,
+			0, GL_BGRA, GL_UNSIGNED_BYTE, (void*)FreeImage_GetBits(pImage));
+
+		FreeImage_Unload(pImage);
+		//
+		glEnable(GL_TEXTURE_2D);
+	}
+
 
 	virtual void OnRender(void)
 	{
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	
       //timer010 = 0.09; //for screenshot!
+
       glPushMatrix();
+	  glRotatef(timer010 * 360, 0.5, 1.0f, 0.1f);
+
       if (shader) shader->begin();
-         glRotatef(timer010*360, 0.5, 1.0f, 0.1f);
-         glutSolidTeapot(1.0);
+		  
+		  glPushMatrix();
+		  glTranslatef(-1.5f, 0.0f, 0.0f);
+		  glmDraw(objmodel_ptr, GLM_SMOOTH | GLM_MATERIAL);
+		  glPopMatrix();
+	      //glutSolidTeapot(1.0);
       if (shader) shader->end();
+
+	  //*** Para Textura: llamado al shader para objetos texturizados
+	  if (shader1) shader1->begin();
+
+		  glPushMatrix();
+		  glTranslatef(1.5f, 0.0f, 0.0f);
+		  glBindTexture(GL_TEXTURE_2D, texid);
+		  glmDraw(objmodel_ptr1, GLM_SMOOTH | GLM_MATERIAL | GLM_TEXTURE);
+		  glPopMatrix();
+	  //glutSolidTeapot(1.0);
+	  if (shader1) shader1->end();
+
+
       glutSwapBuffers();
       glPopMatrix();
 
@@ -63,10 +123,50 @@ public:
          ProgramObject = shader->GetProgramObject();
       }
 
+	 //*** Para Textura: abre los shaders para texturas
+		shader1 = SM.loadfromFile("vertexshaderT.txt", "fragmentshaderT.txt"); // load (and compile, link) from file
+		if (shader1 == 0)
+			std::cout << "Error Loading, compiling or linking shader\n";
+		else
+		{
+			ProgramObject = shader1->GetProgramObject();
+		}
+
       time0 = clock();
       timer010 = 0.0f;
       bUp = true;
 
+	  //Abrir mallas
+	  objmodel_ptr = NULL;
+
+	  if (!objmodel_ptr)
+	  {
+		  objmodel_ptr = glmReadOBJ("./Mallas/bunny.obj");
+		  if (!objmodel_ptr)
+			  exit(0);
+
+		  glmUnitize(objmodel_ptr);
+		  glmFacetNormals(objmodel_ptr);
+		  glmVertexNormals(objmodel_ptr, 90.0);
+	  }
+
+
+	  //*** Para Textura: abrir malla de objeto a texturizar
+	  objmodel_ptr1 = NULL;
+
+	  if (!objmodel_ptr1)
+	  {
+		  objmodel_ptr1 = glmReadOBJ("./Mallas/bola.obj");
+		  if (!objmodel_ptr1)
+			  exit(0);
+
+		  glmUnitize(objmodel_ptr1);
+		  glmFacetNormals(objmodel_ptr1);
+		  glmVertexNormals(objmodel_ptr1, 90.0);
+	  }
+ 
+	  //*** Para Textura: abrir archivo de textura
+	  initialize_textures();
       DemoLight();
 
 	}
