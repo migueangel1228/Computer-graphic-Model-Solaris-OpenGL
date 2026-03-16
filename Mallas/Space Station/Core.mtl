@@ -1,0 +1,341 @@
+# MTL file - created by a modified js OBJExporter
+
+newmtl ALM_main
+Tr 0.0000
+Tf 1.0000 1.0000 1.0000
+illum 1
+Pm 1
+Pr 1
+Pds 1
+Pl 1
+Pccns 1-1
+Prfl 0.4591837131892669
+Pior 1.4500000476837158
+Pshc 0 0 0
+Pshr 1
+Psi 1
+Psc 0.189708604914994 0.189708604914994 0.189708604914994
+Ka 1 1 1
+Kd 1 1 1
+Ke 0 0 0
+map_Kd ALM_main.png
+map_Pm metalnessMap1.png
+map_Pr metalnessMap1.png
+norm normalMap1.png
+
+newmtl ALM_aux
+Tr 0.0000
+Tf 1.0000 1.0000 1.0000
+illum 1
+Pm 1
+Pr 1
+Pds 1
+Pl 1
+Pccns 1-1
+Prfl 0.4591837131892669
+Pior 1.4500000476837158
+Pshc 0 0 0
+Pshr 1
+Psi 1
+Psc 0.189708604914994 0.189708604914994 0.189708604914994
+Ka 1 1 1
+Kd 1 1 1
+Ke 0 0 0
+map_Kd ALM_aux.png
+map_Pm metalnessMap2.png
+map_Pr metalnessMap2.png
+norm normalMap2.png
+
+newmtl NDS_ports.002
+Tr 0.0000
+Tf 1.0000 1.0000 1.0000
+illum 1
+Pm 1
+Pr 1
+Pds 1
+Pl 1
+Pccns 1-1
+Prfl 0.4591837131892669
+Pior 1.4500000476837158
+Pshc 0 0 0
+Pshr 1
+Psi 1
+Psc 0.189708604914994 0.189708604914994 0.189708604914994
+Ka 1 1 1
+Kd 1 1 1
+Ke 0 0 0
+map_Kd NDS_ports.002.png
+map_Pm metalnessMap3.png
+map_Pr metalnessMap3.png
+
+newmtl DSXR
+Tr 0.0000
+Tf 1.0000 1.0000 1.0000
+illum 1
+Pm 1
+Pr 1
+Pds 1
+Pl 1
+Pccns 1-1
+Prfl 0.4591837131892669
+Pior 1.4500000476837158
+Pshc 0 0 0
+Pshr 1
+Psi 1
+Psc 0.189708604914994 0.189708604914994 0.189708604914994
+Ka 1 1 1
+Kd 1 1 1
+Ke 0 0 0
+map_Kd DSXR.png
+map_Ke emissiveMap4.png
+map_Pm metalnessMap4.png
+map_Pr metalnessMap4.png
+norm normalMap4.png
+
+newmtl ERMXL_aux
+Tr 0.0000
+Tf 1.0000 1.0000 1.0000
+illum 1
+Pm 1
+Pr 1
+Pds 1
+Pl 1
+Pccns 1-1
+Prfl 0.4591837131892669
+Pior 1.4500000476837158
+Pshc 0 0 0
+Pshr 1
+Psi 1
+Psc 0.189708604914994 0.189708604914994 0.189708604914994
+Ka 1 1 1
+Kd 1 1 1
+Ke 0 0 0
+map_Kd ERMXL_aux.png
+map_Pm metalnessMap5.png
+map_Pr metalnessMap5.png
+norm normalMap5.png
+
+newmtl ERMXL_main
+Tr 0.0000
+Tf 1.0000 1.0000 1.0000
+illum 1
+Pm 1
+Pr 1
+Pds 1
+Pl 1
+Pccns 1-1
+Prfl 0.4591837131892669
+Pior 1.4500000476837158
+Pshc 0 0 0
+Pshr 1
+Psi 1
+Psc 0.189708604914994 0.189708604914994 0.189708604914994
+Ka 1 1 1
+Kd 1 1 1
+Ke 0 0 0
+map_Kd ERMXL_main.png
+map_Pm metalnessMap6.png
+map_Pr metalnessMap6.png
+norm normalMap6.png
+
+newmtl NDS_ports
+Tr 0.0000
+Tf 1.0000 1.0000 1.0000
+illum 1
+Pm 1
+Pr 1
+Pds 1
+Pl 1
+Pccns 1-1
+Prfl 0.4591837131892669
+Pior 1.4500000476837158
+Pshc 0 0 0
+Pshr 1
+Psi 1
+Psc 0.189708604914994 0.189708604914994 0.189708604914994
+Ka 1 1 1
+Kd 1 1 1
+Ke 0 0 0
+map_Kd NDS_ports.002.png
+map_Pm metalnessMap3.png
+map_Pr metalnessMap3.png
+norm normalMap7.png
+
+newmtl iHab_aux
+Tr 0.0000
+Tf 1.0000 1.0000 1.0000
+illum 1
+Pm 1
+Pr 1
+Pds 1
+Pl 1
+Pccns 1-1
+Prfl 0.4591837131892669
+Pior 1.4500000476837158
+Pshc 0 0 0
+Pshr 1
+Psi 1
+Psc 0.189708604914994 0.189708604914994 0.189708604914994
+Ka 1 1 1
+Kd 1 1 1
+Ke 0 0 0
+map_Kd iHab_aux.png
+map_Pm metalnessMap8.png
+map_Pr metalnessMap8.png
+norm normalMap8.png
+
+newmtl iHab_main
+Tr 0.0000
+Tf 1.0000 1.0000 1.0000
+illum 1
+Pm 1
+Pr 1
+Pds 1
+Pl 1
+Pccns 1-1
+Prfl 0.4591837131892669
+Pior 1.4500000476837158
+Pshc 0 0 0
+Pshr 1
+Psi 1
+Psc 0.189708604914994 0.189708604914994 0.189708604914994
+Ka 1 1 1
+Kd 1 1 1
+Ke 0 0 0
+map_Kd iHab_main.png
+map_Pm metalnessMap9.png
+map_Pr metalnessMap9.png
+norm normalMap9.png
+
+newmtl NDS_ports.001
+Tr 0.0000
+Tf 1.0000 1.0000 1.0000
+illum 1
+Pm 1
+Pr 1
+Pds 1
+Pl 1
+Pccns 1-1
+Prfl 0.4591837131892669
+Pior 1.4500000476837158
+Pshc 0 0 0
+Pshr 1
+Psi 1
+Psc 0.189708604914994 0.189708604914994 0.189708604914994
+Ka 1 1 1
+Kd 1 1 1
+Ke 0 0 0
+map_Kd NDS_ports.001.png
+map_Pm metalnessMap10.png
+map_Pr metalnessMap10.png
+
+newmtl PPE_aux
+Tr 0.0000
+Tf 1.0000 1.0000 1.0000
+illum 1
+Pm 1
+Pr 1
+Pds 1
+Pl 1
+Pccns 1-1
+Prfl 0.4591837131892669
+Pior 1.4500000476837158
+Pshc 0 0 0
+Pshr 1
+Psi 1
+Psc 0.189708604914994 0.189708604914994 0.189708604914994
+Ka 1 1 1
+Kd 1 1 1
+Ke 0 0 0
+map_Kd PPE_aux.png
+map_Pm metalnessMap11.png
+map_Pr metalnessMap11.png
+norm normalMap11.png
+
+newmtl PPE_main
+Tr 0.0000
+Tf 1.0000 1.0000 1.0000
+illum 1
+Pm 1
+Pr 1
+Pds 1
+Pl 1
+Pccns 1-1
+Prfl 0.4591837131892669
+Pior 1.4500000476837158
+Pshc 0 0 0
+Pshr 1
+Psi 1
+Psc 0.189708604914994 0.189708604914994 0.189708604914994
+Ka 1 1 1
+Kd 1 1 1
+Ke 0 0 0
+map_Kd PPE_main.png
+map_Pm metalnessMap12.png
+map_Pr metalnessMap12.png
+norm normalMap12.png
+
+newmtl HALO_main
+Tr 0.0000
+Tf 1.0000 1.0000 1.0000
+illum 1
+Pm 1
+Pr 1
+Pds 1
+Pl 1
+Pccns 1-1
+Prfl 0.4591837131892669
+Pior 1.4500000476837158
+Pshc 0 0 0
+Pshr 1
+Psi 1
+Psc 0.189708604914994 0.189708604914994 0.189708604914994
+Ka 1 1 1
+Kd 1 1 1
+Ke 0 0 0
+map_Kd HALO_main.png
+map_Pm metalnessMap13.png
+map_Pr metalnessMap13.png
+norm normalMap13.png
+
+newmtl Default
+Tr 0.0000
+Tf 1.0000 1.0000 1.0000
+illum 1
+Pm 1
+Pr 0.5527864098548889
+Pds 1
+Pl 1
+Pccns 1-1
+Prfl 0.4591837131892669
+Pior 1.4500000476837158
+Pshc 0 0 0
+Pshr 1
+Psi 1
+Psc 2.371357614441398 2.371357614441398 2.371357614441398
+Ka 1 1 1
+Kd 0.800000011920929 0.800000011920929 0.800000011920929
+Ke 0 0 0
+
+newmtl HALO_aux
+Tr 0.0000
+Tf 1.0000 1.0000 1.0000
+illum 1
+Pm 1
+Pr 1
+Pds 1
+Pl 1
+Pccns 1-1
+Prfl 0.4591837131892669
+Pior 1.4500000476837158
+Pshc 0 0 0
+Pshr 1
+Psi 1
+Psc 0.189708604914994 0.189708604914994 0.189708604914994
+Ka 1 1 1
+Kd 1 1 1
+Ke 0 0 0
+map_Kd HALO_aux.png
+map_Pm metalnessMap15.png
+map_Pr metalnessMap15.png
+norm normalMap15.png
