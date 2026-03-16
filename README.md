@@ -28,7 +28,6 @@ Este proyecto integra un mundo 3D en OpenGL con:
 
 Si compilas en `Release`, asegurate de que `FreeImage.dll` quede junto al ejecutable en `Release/`.
 
-<<<<<<< HEAD
 ## Compilacion por terminal (Windows)
 
 ### Usando Developer Command Prompt/PowerShell for VS
@@ -44,14 +43,10 @@ Abre “Developer Command Prompt/PowerShell for VS” y repite los comandos ante
 Si aun falla, asegúrate de tener instalado **Desktop development with C++** en Visual Studio Installer.
 
 ## Evidencias
-Guarda tus capturas en `Evidencias/` y actualiza esta seccion.
-
-Ejemplos de nombres sugeridos:
+En `Evidencias/` estan las Fotos del resultado final, con los nombres:
 - `Evidencias/Escena.jpeg`
 - `Evidencias/Evidencia_OpenGL_Solaris.jpeg`
 =======
 ## Evidencia para la entrega
 - Captura de pantalla con el mundo visible.
 - Repositorio GitHub con commits de cada integrante.
-
->>>>>>> dd75016092077e6830c07fdb26c08abb7a9689fd
