@@ -46,7 +46,7 @@ Si aun falla, asegúrate de tener instalado **Desktop development with C++** en 
 En `Evidencias/` estan las Fotos del resultado final, con los nombres:
 - `Evidencias/Escena.jpeg`
 - `Evidencias/Evidencia_OpenGL_Solaris.jpeg`
-=======
+
 ## Evidencia para la entrega
 - Captura de pantalla con el mundo visible.
 - Repositorio GitHub con commits de cada integrante.
