@@ -1,0 +1,61 @@
+# MTL file - created by a modified js OBJExporter
+
+newmtl color
+Tr 0.0000
+Tf 1.0000 1.0000 1.0000
+illum 1
+Pr 0.9
+Pds 1
+Pl 1
+Ka 1 1 1
+Kd 1 1 1
+Ke 0 0 0
+map_Kd color.png
+
+newmtl Batiment
+Tr 0.0000
+Tf 1.0000 1.0000 1.0000
+illum 1
+Pr 0.9
+Pds 1
+Pl 1
+Ka 1 1 1
+Kd 1 1 1
+Ke 0 0 0
+map_Kd Batiment.png
+
+newmtl Vhicule
+Tr 0.0000
+Tf 1.0000 1.0000 1.0000
+illum 1
+Pr 0.4
+Pds 1
+Pl 1
+Ka 1 1 1
+Kd 1 1 1
+Ke 0 0 0
+map_Kd Vhicule.png
+
+newmtl Couche_sdimentaire
+Tr 0.0000
+Tf 1.0000 1.0000 1.0000
+illum 1
+Pr 0.9
+Pds 1
+Pl 1
+Ka 1 1 1
+Kd 1 1 1
+Ke 0 0 0
+map_Kd Couche_sdimentaire.png
+norm normalMap4.png
+
+newmtl Root
+Tr 0.0000
+Tf 1.0000 1.0000 1.0000
+illum 1
+Pr 0.9
+Pds 1
+Pl 1
+Ka 1 1 1
+Kd 0.005 0.005 0.005
+Ke 0 0 0
