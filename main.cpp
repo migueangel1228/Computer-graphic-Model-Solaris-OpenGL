@@ -10,7 +10,7 @@
 #include "glsl.h"
 #include <time.h>
 #include "glm.h"
-#include <FreeImage.h> //*** Para Textura: Incluir librería
+#include <FreeImage.h> //*** Para Textura: Incluir librerï¿½a
 
 //-----------------------------------------------------------------------------
 
@@ -33,7 +33,7 @@ protected:
 public:
 	myWindow(){}
 
-	//*** Para Textura: aqui adiciono un método que abre la textura en JPG
+	//*** Para Textura: aqui adiciono un mï¿½todo que abre la textura en JPG
 	void initialize_textures(void)
 	{
 		int w, h;
