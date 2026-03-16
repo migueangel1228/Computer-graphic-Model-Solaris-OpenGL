@@ -1,10 +1,10 @@
 # Mundo 3D OpenGL - Mallas, Texturas y Grid Espacial
 
-## Objetivo
-Proyecto con mundo 3D en OpenGL que integra:
-- 5 mallas `.obj` espaciales.
+## Objetivo cumplido
+Este proyecto integra un mundo 3D en OpenGL con:
+- 5 mallas `.obj` del tema espacial.
 - Un objeto texturizado con FreeImage.
-- Estructura de clases clara (Mesh, Texture, SceneObject, Scene, SpatialGrid).
+- Estructura de clases (Mesh, Texture, SceneObject, Scene, SpatialGrid).
 - Organizacion espacial con grid uniforme y debug visual.
 
 ## Assets usados (en `Mallas/`)
@@ -28,10 +28,7 @@ Proyecto con mundo 3D en OpenGL que integra:
 
 Si compilas en `Release`, asegurate de que `FreeImage.dll` quede junto al ejecutable en `Release/`.
 
-## Evidencias
-Guarda tus capturas en `Evidencias/` y actualiza esta seccion.
-
-Ejemplos de nombres sugeridos:
-- `Evidencias/Escena.jpeg`
-- `Evidencias/Evidencia_OpenGL_Solaris.jpeg`
+## Evidencia para la entrega
+- Captura de pantalla con el mundo visible.
+- Repositorio GitHub con commits de cada integrante.
 
